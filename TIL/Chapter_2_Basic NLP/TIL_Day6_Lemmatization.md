@@ -4,7 +4,7 @@ it is more close to 'Morphological Analysis'
 
 lemmatization is typically seen as much more informative than simple stemming.
 
-thats why Spacy has opted only lemmatization instaed of Stmming
+thats why Spacy has opted only lemmatization instead of Stemming
 
 ![image-20210906111131125](photo/image-20210906111131125-16308942924481.png)
 
