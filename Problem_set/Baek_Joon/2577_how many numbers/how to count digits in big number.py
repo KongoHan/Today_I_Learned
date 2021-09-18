@@ -2,7 +2,6 @@ import sys
 
 sys.stdin = open('input.txt')
 
-len_T = 3
 T=1
 for numbers in range(3):
     T = T*int(input())
