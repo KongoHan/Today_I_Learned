@@ -18,15 +18,17 @@ for m in range(case_num): #각 test Case 별 구문
     # print(f'size_stop : {size_stop}') #표기용
     # print(f'size_charge : {size_charge}') #표기용
     # print(f'pos_charge : {pos_charge}') #표기용
-
+    c_p = 0
     for j in pos_charge:
         charge_stop[j] = True # 충전소 위치를 True로 표기하기로함.
     # print(charge_stop)
-    for k in range(size_stop+1):
+    for k in range(size_stop):
         now_pos = now_pos + 1
         fuel_tank = fuel_tank - 1
         if fuel_tank < 0:
+
             # print(f'run out of gases')
+            c_p = 1
             break
 
         else:
@@ -79,7 +81,8 @@ for m in range(case_num): #각 test Case 별 구문
                 # print(refill_gas)
 
     mod_check = size_stop//size_move
-    if refill_gas < mod_check :
+
+    if c_p==1 :
         print(f'#{m+1} 0')
         fuel_tank = size_move
         refill_gas = 0
